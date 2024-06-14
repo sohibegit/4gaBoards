@@ -158,7 +158,7 @@ export const makeSelectCommentsCountByCardId = () =>
         return cardModel;
       }
 
-      return cardModel.commentsCount;
+      return cardModel.getCommentsCount();
     },
   );
 

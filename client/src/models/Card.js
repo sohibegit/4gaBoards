@@ -265,6 +265,10 @@ export default class extends BaseModel {
     return this.attachments.count();
   }
 
+  getCommentsCount() {
+    return this.activities.count();
+  }
+
   getFilteredOrderedInCardActivitiesQuerySet() {
     const filter = {
       isInCard: true,
